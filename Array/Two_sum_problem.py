@@ -28,7 +28,10 @@ def two_sum(nums):
         hashmap[nums[i]]=i
     return[]
 
+#Test case
 nums=[3,2,4]
 print(two_sum(nums))
+
+
 
 
