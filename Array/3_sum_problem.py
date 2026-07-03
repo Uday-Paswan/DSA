@@ -1,3 +1,25 @@
+"""
+Problem: 3Sum
+Platform: LeetCode
+Link: https://leetcode.com/problems/3sum/
+Difficulty: Medium
+
+Pattern:
+- Array
+- Sorting
+- Two Pointers
+
+Approach:
+Sort the array and fix one element.
+Use two pointers to find the remaining two elements whose sum
+equals the target (0). Skip duplicate elements to avoid
+duplicate triplets.
+
+Time Complexity: O(n²)
+Space Complexity: O(1)
+"""
+
+
 def Three_sum(nums):
     n=len(nums)
     result=[]
