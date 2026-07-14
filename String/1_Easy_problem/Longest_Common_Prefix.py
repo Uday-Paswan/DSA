@@ -21,7 +21,7 @@ def common_prefix(strs):
     prefix=""
     for i in range(len(first)):
         for j in range(1,len(strs)):
-            if i>len(strs[j]):
+            if i>=len(strs[j]):
                 return prefix
             if strs[j][i]!=first[i]:
                 return prefix
