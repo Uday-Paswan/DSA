@@ -69,6 +69,31 @@ def insert_at_position(head, data, pos):
 
     return head
 
+#DELETE OPERATIONS
+
+def delete_from_beginning(head):
+
+    if head is None:
+        return None
+
+    head = head.next
+
+    return head
+
+def delete_from_end(head):
+
+    if head is None or head.next is None:
+        return None
+
+    current = head
+
+    while current.next.next is not None:
+        current = current.next
+
+    current.next = None
+
+    return head
+
 
 arr = [10, 20, 30, 40]
 
