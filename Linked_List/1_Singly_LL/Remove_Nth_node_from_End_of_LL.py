@@ -19,10 +19,26 @@ target node and return dummy.next.
 Time Complexity: O(n)
 Space Complexity: O(1)
 """
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+
+def create_linked_list(nums):
+    if not nums:
+        return None
+    head=Node(nums[0])
+    current=head
+    for i in range(1,len(nums)):
+        new_node=Node(nums[i])
+        current.next=new_node
+        current=current.next
+    return head
 
 #ONlY ALGRORITHM 
+
 def remove(head,n):
-    dummy=ListNode(0)
+    dummy=Node(0)
     dummy.next=head
     slow=dummy
     fast=dummy
