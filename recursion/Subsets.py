@@ -19,7 +19,7 @@ Time Complexity: O(n × 2^n)
 Space Complexity: O(n) (excluding the output)
 
 """
-def subset(nums):
+def subsets(nums):
     result=[]
     def func(index,subset):
         if index>=len(nums):
@@ -34,6 +34,4 @@ def subset(nums):
 
 #Test Case
 nums = [1,2,3]
-print(subset(nums))
-
-        
+print(subsets(nums))    
